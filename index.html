@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Kezdőlap - Star Stable Guessr</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Merienda&display=swap');
+    </style>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel = "icon" href = "img/ico.png" type = "image/x-icon">
+    <script defer src="js/all.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+
+<body class="bg-image" style="background-image: linear-gradient(to right, rgba(116,1,121,1) 0%, rgba(255,255,255,0) 100%),
+url(/img/bg.jpg);height: 100vh;" onload="myFunction()" style="margin:0;">
+    <div id="loader"></div>
+    <!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark shadow-5-strong">
+    <!-- Container wrapper -->
+    <div class="container-fluid">
+      <!-- Navbar brand -->
+      <a class="navbar-brand" href="#"><img src="/img/logo.png" width="150px" padding="20px" padding-left="20px" alt=""></a>
+    </div>
+  </nav>
+  <!-- Navbar -->
+    <div style="display:none;" id="page" class="animate-bottom">
+        <div class="flex-container">
+            <p class="text">Üdvözöllek Jorvikban!</p>
+            <p class="description">Fedezd fel Jorvik legeldugottabb részeit!</p>
+            <br>
+            </div>
+        </div>
+    </div>
+    <div class="flex flex-col  mt-5" bis_skin_checked="1">
+        <div bis_skin_checked="1">
+            <img class="fixed top-0 right-0 z-[-1] h-full fade rounded-tl-3xl rounded-bl-3xl hidden md:block" alt="" src="./img/bg.jpg">
+        </div>
+        <div class="hidden md:block" bis_skin_checked="1">
+            <div class="cursor-pointer group z-[1000]" bis_skin_checked="1">
+                <div class="italic font-bold ml-5 md:ml-[100px] tracking-wider gm-shadow uppercase text-white duration-300 text-[2rem] md:text-[3rem] md:group-hover:text-[3.5rem]" bis_skin_checked="1" onclick="location.href='game.html'">Jorvik
+                </div>
+            <div class="text-slate-400 ml-5 md:ml-[100px] text-md" bis_skin_checked="1">Klasszikus
+            </div>
+        </div>
+    </div>
+    <div class="flex flex-col  mt-5" bis_skin_checked="1">
+        <div bis_skin_checked="1">
+            <img class="fixed top-0 right-0 z-[-1] h-full fade rounded-tl-3xl rounded-bl-3xl hidden md:block" alt="" src="./img/bg.jpg">
+        </div>
+        <div class="hidden md:block" bis_skin_checked="1">
+            <div class="cursor-pointer group z-[1000]" bis_skin_checked="1">
+                <div class="italic font-bold ml-5 md:ml-[100px] tracking-wider gm-shadow uppercase text-white duration-300 text-[2rem] md:text-[3rem] md:group-hover:text-[3.5rem]" bis_skin_checked="1" onclick="location.href='game2.html'">Lovak
+                </div>
+            <div class="text-slate-400 ml-5 md:ml-[100px] text-md" bis_skin_checked="1">Elég jól ismered a lovakat?
+            </div>
+        </div>
+    </div>
+    <script>
+        var myVar;
+            
+        function myFunction() {
+            myVar = setTimeout(showPage, 1500);
+        }
+            
+        function showPage() {
+            document.getElementById("loader").style.display = "none";
+            document.getElementById("page").style.display = "block";
+        }
+    </script>
+</body>
+</html>
