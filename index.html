@@ -11,7 +11,34 @@
         <!-- Bootstrap icons-->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
         <!-- Core theme CSS (includes Bootstrap)-->
-
+        <script>
+            var userLang = navigator.language || navigator.userLanguage;
+            var supportedLanguages = ['hu', 'en'];
+        
+            // Check if the detected language is supported
+            var specificLangCode = userLang.toLowerCase();
+            var generalLangCode = specificLangCode.split('-')[0]; // Extract the general language code
+        
+            if (supportedLanguages.includes(specificLangCode) || supportedLanguages.includes(generalLangCode)) {
+                // Construct the filename based on the language
+                var fileName = 'index_' + (supportedLanguages.includes(specificLangCode) ? specificLangCode : generalLangCode) + '.html';
+        
+                // Check if the file exists before redirecting
+                fetch(fileName)
+                    .then(response => {
+                        if (!response.ok) {
+                            // Language-specific file not found, redirect to default
+                            window.location.href = 'index_en.html'; // Adjust the default filename as needed
+                        } else {
+                            // Redirect to the appropriate language-specific URL
+                            window.location.href = fileName;
+                        }
+                    })
+                    .catch(error => {
+                        console.error('Error checking language-specific file:', error);
+                    });
+            }
+        </script>
         
         <script src="https://cdn.tailwindcss.com"></script><link rel = "icon" href = "img/ico.png" type = "image/x-icon">
         <style>
