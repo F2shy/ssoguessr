@@ -4,7 +4,7 @@ let roundLocked = false;
     let guess = sessionStorage.getItem("guess");
 
     if (roundLocked) {
-      alert("A jelzőpont elhelyezése zárolva van. Kattints a „Következő kör” gombra a feloldáshoz.");
+      alert("Marker placement is locked. Click 'Next Round' to unlock.");
       return;
   }
     if (userMarker != undefined){
@@ -58,7 +58,7 @@ let roundLocked = false;
     score = sessionStorage.getItem("score");
     guess = sessionStorage.getItem("guess");
     if (userMarker == undefined){
-      alert("Elősször tippelj!");
+      alert("Guess first!");
       return;
     }
     if (targetMarker != undefined){
@@ -87,8 +87,8 @@ let roundLocked = false;
     roundLocked = true;
 
     var polyline = L.polyline(polylinePoints).addTo(map);
-    document.getElementById('distance').innerHTML = (~~result + " méterrel a céltól");
-    document.getElementById('submitButton').innerHTML = ("Következő");
+    document.getElementById('distance').innerHTML = (~~result + " meters away from target");
+    document.getElementById('submitButton').innerHTML = ("Next");
   }
 
   function diff (num1, num2) {

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Homepage- Star Stable Guessr</title>        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Bootstrap icons-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+
+        
+        <script src="https://cdn.tailwindcss.com"></script><link rel = "icon" href = "img/ico.png" type = "image/x-icon">
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Merienda&display=swap');
+        </style>
+    </head>
+    <style>
+        .fade:not(.show) {
+   opacity: 1;
+}
+        .bg-image {
+        position: relative;
+        z-index: 1;
+        background: linear-gradient(to left top,#4c0442,#2c0039 20%,#1d001e 40%,#1b001e 45%,#18001e 50%,#350039 80%,#45044c);
+    }
+
+     
+  /* Add animation to "page content" */
+  .animate-bottom {
+    position: relative;
+    -webkit-animation-name: animatebottom;
+    -webkit-animation-duration: 1s;
+    animation-name: animatebottom;
+    animation-duration: 1s
+  }
+  
+  @-webkit-keyframes animatebottom {
+    from { bottom:-100px; opacity:0 } 
+    to { bottom:0px; opacity:1 }
+  }
+  
+  @keyframes animatebottom { 
+    from{ bottom:-100px; opacity:0 } 
+    to{ bottom:0; opacity:1 }
+  }
+    </style>
+    <div class="bg-image">
+
+    <body class="d-flex flex-column h-100" style="background-color: #333;">
+        <main class="flex-shrink-0">
+            
+            <!-- Navigation-->
+            <nav class="navbar navbar-expand-lg navbar-dark">
+               
+                <div class="container px-5">
+                    <a class="navbar-brand" href="index.html"><img src="/img/logo.png" alt="" width="100"></a>
+                    
+                </div>
+            </nav>
+            <!-- Header-->
+            <header class="py-5">
+                <div class="container px-5">
+                    <div class="row gx-5 align-items-center justify-content-center">
+                        <div class="col-lg-8 col-xl-7 col-xxl-6">
+                            <div class="my-5 text-center text-xl-start">
+                                <h1 class="display-5 fw-bolder text-white mb-2">Welcome to SSOGuessr!</h1>
+                                <p class="lead fw-normal text-white-50 mb-4">Do you know the world of Jorvik well enough? Test yourself!</p>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <!-- Features section-->
+            <section class="py-5" id="features">
+                <div class="container px-5 my-5">
+                    <div class="row gx-5">
+                        <div class="col-lg-8">
+                            <div class="row gx-5 row-cols-1 row-cols-md-2">
+                                <div class="flex flex-col  mt-5" bis_skin_checked="1" >
+                                    <div bis_skin_checked="1">
+                                        <img class="fixed top-0 right-0 z-[-1] h-full fade rounded-tl-3xl rounded-bl-3xl hidden md:block" alt="" >
+                                    </div>
+                                        <div class="cursor-pointer group z-[1000]" bis_skin_checked="1" id="gamebox1">
+                                            <div class="italic font-bold ml-5 md:ml-[100px] tracking-wider gm-shadow uppercase text-white duration-300 text-[2rem] md:text-[3rem] md:group-hover:text-[3.5rem]" bis_skin_checked="1" onclick="location.href='game_en.html'">Jorvik
+                                            </div>
+                                        <div class="text-slate-400 ml-5 md:ml-[100px] text-md" bis_skin_checked="1">Classic
+                                        </div>
+                                </div>
+                                <div class="flex flex-col  mt-5" bis_skin_checked="1" id="gamebox2">
+                                    <div bis_skin_checked="1">
+                                        <img class="fixed top-0 right-0 z-[-1] h-full fade rounded-tl-3xl rounded-bl-3xl hidden md:block" alt="" >
+                                    </div>
+                                        <div class="cursor-pointer group z-[1000]" bis_skin_checked="1" id="gamebox2">
+                                            <div class="italic font-bold ml-5 md:ml-[100px] tracking-wider gm-shadow uppercase text-white duration-300 text-[2rem] md:text-[3rem] md:group-hover:text-[3.5rem]" bis_skin_checked="1" onclick="location.href='game2_en.html'">Horses
+                                            </div>
+                                        <div class="text-slate-400 ml-5 md:ml-[100px] text-md" bis_skin_checked="1">Do you know the horses well enough?
+                                        </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </section>
+           
+           
+        </main>
+        
+        <!-- Footer-->
+        <footer class="py-4 mt-auto">
+            <div class="container px-5">
+                <div class="row align-items-center justify-content-between flex-column flex-sm-row">
+                    <div class="col-auto"><div class="small m-0 text-white">Copyright &copy; SSOGuessr</div></div>
+                   
+                </div>
+            </div>
+            
+        </footer>
+    </div>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+        
+    </body>
+</html>
